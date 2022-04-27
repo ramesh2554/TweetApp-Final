@@ -1,0 +1,80 @@
+docker-compose up -d
+docker ps -a
+docker exec -it cb54 /bin/bash or docker exec -it cb54 /bin/sh
+root@cb5447eb6ba0:/# cqlsh
+desc keyspaces
+
+cqlsh> CREATE KEYSPACE tweetapp with replication = {'class':'SimpleStrategy','replication_factor':'1'};
+desc keyspaces
+use tweetapp
+desc tweetapp;
+desc tables;
+select * from tweetapp.user_details;
+select * from tweetapp.tweet_details;
+
+User service api
+http://localhost:8082/swagger-ui.html
+Tweet service.api
+http://localhost:8082/swagger-ui.html
+
+Kafka commands:
+kafka-topics.sh --list --bootstrap-server localhost:9092
+kafka-console-producer.sh --topic userauth --bootstrap-server localhost:9092
+kafka-console-consumer.sh --topic userauth --from-beginning --bootstrap-server localhost:9092
+
+Spring actuator
+management.endpoint.health.show-details=alwas
+http://localhost:8082/actuator
+
+Sonar
+StartSonar.exe
+localhost:9000
+username:admin
+password:vani13
+run below command by opening cmd in userservice path:
+
+clean verify sonar:sonar -Dsonar.projectKey=tweetapp
+To know PID of sonar application: netstat -ano|grep 9000
+
+prometheus
+localhost:9090
+and exec cmd: prometheus_http_request_duration_seconds_count
+change prometheus.yml file with below code
+ - job_name: 'spring-boot-user-service'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['localhost:8082']
+
+Grafana
+username:admin
+password:admin928
+email:admin@localhost
+port:localhost:3000 or else change port in defaults.ini
+
+ElasticSearch
+open cmd in zip file of elastic search upto bin
+then run elasticsearch.bat
+open localhost:9200
+
+Logstash
+
+Kibana:localhost:5601
+
+ELK stack (centralized logging )
+E- elastic search  - index and storage -- 9200
+L - Logstack - data processing -- 9600 -- in logstash bin folder add logstash.conf file 
+before start kibana - go to congig folder un comment the kibana localhost name
+k - kibana - analystics & visulization  -- 5601
+
+----
+sb->logs->logstash->elasticSearch->kibana
+to run logstash 
+
+logstash -f logstash.conf
+
+
+
+UI commands:
+npm install react-scripts
+npm start

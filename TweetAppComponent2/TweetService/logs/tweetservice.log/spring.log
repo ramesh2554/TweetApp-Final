@@ -1,0 +1,32 @@
+2022-04-19 10:11:47.105  INFO 17124 --- [restartedMain] c.iiht.tweetapp.TweetServiceApplication  : Starting TweetServiceApplication using Java 11.0.10 on LAPTOP-DJGIC6QK with PID 17124 (D:\Rameswara\Tranning\fse1\caseStudy\TweetAppComponent3\TweetService\target\classes started by konak in D:\Rameswara\Tranning\fse1\caseStudy\TweetAppComponent3\TweetService)
+2022-04-19 10:11:47.109  INFO 17124 --- [restartedMain] c.iiht.tweetapp.TweetServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-04-19 10:11:47.158  INFO 17124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-19 10:11:48.243  INFO 17124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 10:11:48.312  INFO 17124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2022-04-19 10:11:48.640  INFO 17124 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=30462319-0b99-35bd-988a-7efca8c86dd4
+2022-04-19 10:11:49.062  INFO 17124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-19 10:11:49.074  INFO 17124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-19 10:11:49.075  INFO 17124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-19 10:11:49.253  INFO 17124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-19 10:11:49.254  INFO 17124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2095 ms
+2022-04-19 10:11:49.432  INFO 17124 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 10:11:49.477  INFO 17124 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-19 10:11:49.603  INFO 17124 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-19 10:11:49.695  INFO 17124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-19 10:11:50.091  INFO 17124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-19 10:11:50.113  INFO 17124 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-19 10:11:50.957  INFO 17124 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 10:11:50.972  INFO 17124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 10:11:51.422  WARN 17124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 10:11:51.455  WARN 17124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-04-19 10:11:51.763  INFO 17124 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-19 10:11:52.458  INFO 17124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-19 10:11:53.051  INFO 17124 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-04-19 10:11:53.104  INFO 17124 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-04-19 10:11:53.168  INFO 17124 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-04-19 10:11:53.397  INFO 17124 --- [restartedMain] c.iiht.tweetapp.TweetServiceApplication  : Started TweetServiceApplication in 7.512 seconds (JVM running for 8.9)
+2022-04-19 11:16:00.922  WARN 17124 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s823ms231µs).
+2022-04-19 12:14:36.917  INFO 17124 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-19 12:14:37.290  INFO 17124 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 12:14:37.325  INFO 17124 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-19 12:14:37.343  INFO 17124 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
