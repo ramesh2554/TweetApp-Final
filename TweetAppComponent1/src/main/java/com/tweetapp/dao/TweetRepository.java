@@ -16,6 +16,7 @@ public class TweetRepository {
 	public boolean postTweet(TweetDetails tweet) {
 		if(conn!=null) {
 			try {
+				//create table tweetdetails(tweetid int(10) , username varchar(50) , tweet varchar(50));
 				String query="insert into tweetdetails(tweetid,username,tweet) values (?,?,?);";
 				PreparedStatement stmt=conn.prepareStatement(query);
 				stmt.setInt(1, tweet.getTweetId());
