@@ -17,6 +17,7 @@ public class UserRepository {
 	public boolean addUser(UserDetails user) {
 		if(conn!=null) {
 			try {
+				//create table userdetails(username varchar(50) , firstname varchar(50),lastname varchar(50) ,gender varchar(20),dob date,status boolean ,password varchar(30));
 				String query="Insert into userdetails(username,firstname,lastname,gender,dob,status,password) values (?,?,?,?,?,?,?)";
 				PreparedStatement stmt= conn.prepareStatement(query);
 				stmt.setString(1, user.getUserName());
