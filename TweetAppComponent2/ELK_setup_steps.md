@@ -6,7 +6,7 @@
 
 ### Kibana 
 
-1. Modify the "**kibana.yml**" to point to the "*elasticsearch instance*". In our case this will be 9200. So uncomment(http://localhost/9200) the following line in kibana.yml
+1. Modify the "**kibana.yml**" [kibana/config/kibana.yml] to point to the "*elasticsearch instance*". In our case this will be 9200. So uncomment(http://localhost/9200) the following line in kibana.yml
 2. Run -> goto kibana/bin/ -> cmd -> kibana.bat 
 3. Kibana can accessed at localhost:5601
 
